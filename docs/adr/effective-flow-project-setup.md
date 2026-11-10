@@ -25,6 +25,3 @@ Dieses öffentliche Testrepository dient dem begrenzten Issue-Buddy-Probelauf. D
 | delivery.baseBranch | origin/main |
 | delivery.branchPrefix | effective-flow |
 | worktree.enabled | false |
-| mergeGate.bots | github-actions |
-| mergeGate.bots.github-actions.trigger | /fakebot review |
-| mergeGate.bots.github-actions.check | fakebot/review |
