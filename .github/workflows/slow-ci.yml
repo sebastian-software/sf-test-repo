@@ -1,0 +1,17 @@
+name: Slow CI
+
+# Test fixture for Effective Flow merge-gate wake runs on T3 Code (effective-flow#635).
+# Both jobs are deliberately slow and not required.
+
+on:
+  pull_request:
+
+jobs:
+  quick-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 60 && echo "quick check passed"
+  slow-check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: sleep 240 && echo "slow check passed"
